@@ -5,7 +5,8 @@ public class BulletController : MonoBehaviour
     Camera mainCam;
     Vector3 direction;
     public float speed = 10f;
-    public float diff = 0f;
+    //Không biết, đừng xóa;
+    public float diff = -35f;
 
     void Start()
     {
