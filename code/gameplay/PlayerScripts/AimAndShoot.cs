@@ -64,7 +64,6 @@ public class AimAndShoot : MonoBehaviour
     public void Shoot()
     {
         bulletPrefab = bullets[(int)currentBulletType];
-        Debug.Log((int)currentBulletType);
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         Vector3 shootDirection = (mousePos - transform.position).normalized;
         Instantiate(bulletPrefab, spawnPos.position, Quaternion.identity);
