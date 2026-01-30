@@ -20,6 +20,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = moveDir * speed;
+        rb.linearVelocity = moveDir * speed;
     }
 }
