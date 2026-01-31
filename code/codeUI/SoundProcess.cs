@@ -4,35 +4,52 @@ public class SoundProcess : MonoBehaviour
 {
     public AudioManager audioProcess;
 
-    [Header("Tick Objects")]
+    [Header("Tick Objects (đỏ)")]
     public GameObject musicTick;
     public GameObject sfxTick;
-    public GameObject checkBoxMusic;
-    public GameObject checkBoxSfx;
 
-    bool musicOn = true;
+    private static bool musicOn = true;
+    private static bool sfxOn = true;
 
     void Start()
     {
-        audioProcess.playMusic();
-        audioProcess.playSFX();
+        ApplyUI();
+
+        ApplyAudio();
     }
 
-    void OnMouseDown()
+    public void ToggleMusic()
     {
-
         musicOn = !musicOn;
+        ApplyUI();
+        ApplyAudio();
+    }
 
-        if (musicOn==true)
+    public void ToggleSfx()
+    {
+        sfxOn = !sfxOn;
+        ApplyUI();
+        ApplyAudio();
+    }
+
+    private void ApplyUI()
+    {
+        if (musicTick != null) musicTick.SetActive(musicOn);
+        if (sfxTick != null) sfxTick.SetActive(sfxOn);
+    }
+
+    private void ApplyAudio()
+    {
+        if (audioProcess == null) return;
+
+        if (musicOn) audioProcess.playMusic();
+        else audioProcess.stopMusic();
+
+        if (audioProcess.sfxSource != null)
         {
-            musicTick.SetActive(true);
-            audioProcess.playMusic();
-            
-        }
-        else
-        {
-            musicTick.SetActive(false);
-            audioProcess.stopMusic();
+            audioProcess.sfxSource.mute = !sfxOn;
+
+            if (!sfxOn) audioProcess.sfxSource.Stop();
         }
     }
 }

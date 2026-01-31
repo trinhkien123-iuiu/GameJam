@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6689194958903004701}
   - component: {fileID: 5605962675159498768}
   - component: {fileID: 8243677143304578722}
+  - component: {fileID: 2126436343309591218}
   - component: {fileID: -9145994455316934314}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,6 +99,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3265f13c1e697444fab3b5b4d79ed9d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed1: 10
+  diff1: 0
+--- !u!114 &2126436343309591218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3748946342374426246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9318baac88731d14284392fcee40215b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!61 &-9145994455316934314
 BoxCollider2D:
   m_ObjectHideFlags: 0
