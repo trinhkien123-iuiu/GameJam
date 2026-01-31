@@ -21,6 +21,7 @@ public class LowRangeEnemy : MonoBehaviour
     public float moveSpeed = 5f;
     public float delayTime = 1.0f;
     public float delayTimeBegin = 1.0f;
+    Animator animator;
     // Start is called before the first frame update
 
     elements RandomEnemy()
@@ -30,6 +31,7 @@ public class LowRangeEnemy : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         currentElement = RandomEnemy();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = GetComponent<Rigidbody2D>();
@@ -51,12 +53,15 @@ public class LowRangeEnemy : MonoBehaviour
         health -= damage;
         if (health <= 0f)
         {
-            Die();
+            StartCoroutine(Die());
         }
     }
 
-    public void Die()
+   
+    IEnumerator Die()
     {
+        animator.SetInteger("isDoing", -1);
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
 }

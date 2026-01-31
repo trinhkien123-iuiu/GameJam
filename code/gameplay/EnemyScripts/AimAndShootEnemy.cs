@@ -13,6 +13,7 @@ public class AimAndShootEnemy : MonoBehaviour
 
     void Start()
     {
+        
         isDead = GetComponentInParent<LongRangeEnemy>().isDead;
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }

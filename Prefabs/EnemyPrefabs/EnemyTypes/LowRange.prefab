@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1258216639400466254}
   - component: {fileID: 3779480326681239687}
   - component: {fileID: 185946458418508650}
+  - component: {fileID: 295971621567485310}
   m_Layer: 6
   m_Name: LowRange
   m_TagString: LowRangeEnemy
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.79622644, g: 0.79622644, b: 0.79622644, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -163,9 +164,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   currentElement: 0
-  attackRange: 10
-  lookDis: 20
   bulletPrefab: {fileID: 0}
   moveSpeed: 1.5
   delayTime: 1
   delayTimeBegin: 1
+--- !u!95 &295971621567485310
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167495007299347175}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0cd26b5cf84f17a41a3c8b7631ae4a49, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

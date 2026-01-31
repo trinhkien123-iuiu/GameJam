@@ -23,6 +23,7 @@ public class LongRangeEnemy : MonoBehaviour
 
     private Rigidbody2D rb;
     public GameObject bulletPrefab;
+    MiniBossAnim miniBossAnim;
     public float moveSpeed = 5f;
     public float delayTime = 1.0f;
     public float delayTimeBegin = 1.0f;
@@ -39,20 +40,21 @@ public class LongRangeEnemy : MonoBehaviour
     void Start()
     {
         hitBoxCollect = this.gameObject.GetComponentInChildren<CollectTrigger>().gameObject;
-        if (currentElement == elements.Fire)
-        {
-            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-        }
-        else if (currentElement == elements.Water)
-        {
-            gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-        }
-        else if (currentElement == elements.Earth)
-        {
-            gameObject.GetComponent<SpriteRenderer>().color = Color.black;
-        }
+        //if (currentElement == elements.Fire)
+        //{
+        //    gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        //}
+        //else if (currentElement == elements.Water)
+        //{
+        //    gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+        //}
+        //else if (currentElement == elements.Earth)
+        //{
+        //    gameObject.GetComponent<SpriteRenderer>().color = Color.black;
+        //}
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = GetComponent<Rigidbody2D>();
+        miniBossAnim = GetComponent<MiniBossAnim>();
     }
 
     void FixedUpdate()
@@ -66,18 +68,21 @@ public class LongRangeEnemy : MonoBehaviour
             {
                 // Player quá xa → đứng yên
                 rb.velocity = Vector2.zero;
+                miniBossAnim.AnimIdle();
             }
             else if (distance > attackRange)
             {
                 // Trong tầm nhìn → chạy lại
                 Vector2 dir = (player.position - transform.position).normalized;
                 rb.MovePosition(rb.position + dir * moveSpeed * Time.fixedDeltaTime);
+                miniBossAnim.AnimWalk();
             }
             else
             {
                 // Trong tầm bắn → đứng yên và bắn
                 rb.velocity = Vector2.zero;
                 isShooting = true;
+                miniBossAnim.AnimAttack1();
             }
         }
     }
@@ -87,15 +92,18 @@ public class LongRangeEnemy : MonoBehaviour
         health -= damage;
         if (health <= 0f)
         {
-            Die();
+            StartCoroutine(Die());
         }
     }
 
-    public void Die()
+    IEnumerator Die()
     {
+        miniBossAnim.AnimDie();
+        yield return new WaitForSeconds(0.6f);
         isDead = true;
         this.GetComponent<Collider2D>().enabled = false;
         this.GetComponent<SpriteRenderer>().enabled = false;
-        hitBoxCollect.GetComponent<Collider2D>().enabled = true;
+      if (hitBoxCollect!=null)  hitBoxCollect.GetComponent<Collider2D>().enabled = true;
+        if (hitBoxCollect != null) hitBoxCollect.GetComponent<SpriteRenderer>().enabled = true;
     }
 }

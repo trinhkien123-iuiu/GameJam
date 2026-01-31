@@ -13,6 +13,11 @@ public class PlayerProperties : MonoBehaviour
     public enum ElementType { Earth, Water, Fire, Default }
     public ElementType currentElement;
 
+    public bool lockOldElements=false;
+
+    public enum NewElementType { Earth, Water, Fire, Wood, Air, Lava, Default}
+    public NewElementType currentNewElement;
+
 
     public void TakeDamage(float damage)
     {
