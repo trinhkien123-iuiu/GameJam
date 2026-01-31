@@ -35,6 +35,18 @@ public class LongRangeEnemy : MonoBehaviour
     void Start()
     {
         currentElement = RandomEnemy();
+        if (currentElement == elements.Fire)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        }
+        else if (currentElement == elements.Water)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+        }
+        else if (currentElement == elements.Earth)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.black;
+        }
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = GetComponent<Rigidbody2D>();
     }

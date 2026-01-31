@@ -40,14 +40,32 @@ public class BulletController : MonoBehaviour
             LongRangeEnemy enemyProperties = collision.gameObject.GetComponent<LongRangeEnemy>();
             if (enemyProperties != null)
             {
-                enemyProperties.TakeDamage(bulletProperties.damage);
+                if (enemyProperties.currentElement == LongRangeEnemy.elements.Fire && bulletProperties.elementType == PlayerProperties.ElementType.Water ||
+                    enemyProperties.currentElement == LongRangeEnemy.elements.Water && bulletProperties.elementType == PlayerProperties.ElementType.Earth ||
+                    enemyProperties.currentElement == LongRangeEnemy.elements.Earth && bulletProperties.elementType == PlayerProperties.ElementType.Fire)
+                {
+                    // Yếu điểm
+                    enemyProperties.TakeDamage(bulletProperties.damage * 2);
+                }
+                else if (enemyProperties.currentElement == LongRangeEnemy.elements.Fire && bulletProperties.elementType == PlayerProperties.ElementType.Earth ||
+                         enemyProperties.currentElement == LongRangeEnemy.elements.Water && bulletProperties.elementType == PlayerProperties.ElementType.Fire ||
+                         enemyProperties.currentElement == LongRangeEnemy.elements.Earth && bulletProperties.elementType == PlayerProperties.ElementType.Water)
+                {
+                    // Kháng
+                    enemyProperties.TakeDamage(bulletProperties.damage / 2);
+                }
+                else
+                {
+                    // Bình thường
+                    enemyProperties.TakeDamage(bulletProperties.damage);
+                }
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
         }
         else if (collision.gameObject.CompareTag("LowRangeEnemy"))
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+        }
     }
-}
