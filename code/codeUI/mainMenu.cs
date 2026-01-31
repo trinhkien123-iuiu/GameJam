@@ -24,7 +24,7 @@ public class mainMenu : MonoBehaviour
     public void playGameBtn()
     {
         var t = Instantiate(transitionPrefab);
-        t.StartToScene("SampleScene");
+        t.StartToScene("GamePlayDemo");
     }
 
     public void OpenInstruction()
