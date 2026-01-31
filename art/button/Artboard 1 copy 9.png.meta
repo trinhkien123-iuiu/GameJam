@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cc6df0b510d0c0b4eaf6b56740447931
+guid: 42177026d99e2c84183e2e5dd11403bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5012934692103782227
-    second: Artboard 1 copy_0
+      213: -1202830950337057832
+    second: Artboard 1 copy 9_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Artboard 1 copy_0
+      name: Artboard 1 copy 9_0
       rect:
         serializedVersion: 2
-        x: 108
-        y: 60
-        width: 1704
-        height: 957
+        x: 296
+        y: 453
+        width: 41
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da00cea057a7e6ab0800000000000000
-      internalID: -5012934692103782227
+      spriteID: 8db6050af9fae4fe0800000000000000
+      internalID: -1202830950337057832
       vertices: []
       indices: 
       edges: []
