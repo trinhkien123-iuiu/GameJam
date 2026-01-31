@@ -9,16 +9,11 @@ public class AimAndShoot : MonoBehaviour
     private Camera mainCam;
     private Vector3 mousePos;
 
-    public enum bulletType //Loai dan
-    {
-        fire,
-        water,
-        earth
-    }
 
     public GameObject[] bullets;
-
-    public bulletType currentBulletType;
+    
+    //Lấy element từ player
+    private PlayerProperties playerProperties;
 
 
     [Header("Khoảng cách tối thiểu để đạn không dính player")]
@@ -26,7 +21,7 @@ public class AimAndShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerProperties = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerProperties>();
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
@@ -35,16 +30,16 @@ public class AimAndShoot : MonoBehaviour
     {
         if (Input.GetKey("1"))
         {
-            currentBulletType = bulletType.fire;
+            playerProperties.currentElement = PlayerProperties.ElementType.Fire;
         }
         else
         if (Input.GetKey("2"))
         {
-            currentBulletType = bulletType.water;
+            playerProperties.currentElement = PlayerProperties.ElementType.Water;
         }
         else if (Input.GetKey("3"))
         {
-            currentBulletType = bulletType.earth;
+            playerProperties.currentElement = PlayerProperties.ElementType.Earth;
         }
         Aim();
         if (Input.GetMouseButtonDown(0))
@@ -63,7 +58,7 @@ public class AimAndShoot : MonoBehaviour
 
     public void Shoot()
     {
-        bulletPrefab = bullets[(int)currentBulletType];
+        bulletPrefab = bullets[(int)playerProperties.currentElement];
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         Vector3 shootDirection = (mousePos - transform.position).normalized;
         Instantiate(bulletPrefab, spawnPos.position, Quaternion.identity);
