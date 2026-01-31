@@ -1,4 +1,4 @@
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = backgroundMusic;
         musicSource.Play();
     }
+
 
     public void stopMusic()
     {
