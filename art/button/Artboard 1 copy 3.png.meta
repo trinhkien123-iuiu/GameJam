@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: ba3b75b0b30396e49a8dc494ad77286d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7829338826437627070
+    second: Artboard 1 copy 3_0
+  - first:
+      213: -1352390717368709535
+    second: Artboard 1 copy 3_1
+  - first:
+      213: -6650488197759232482
+    second: Artboard 1 copy 3_2
+  - first:
+      213: 5396810748995090301
+    second: Artboard 1 copy 3_3
+  - first:
+      213: -4934023849851059369
+    second: Artboard 1 copy 3_4
+  - first:
+      213: -3461888877166594011
+    second: Artboard 1 copy 3_5
+  - first:
+      213: 2468512849624030694
+    second: Artboard 1 copy 3_6
+  - first:
+      213: -5266057854175543560
+    second: Artboard 1 copy 3_7
+  - first:
+      213: -8010332153209870977
+    second: Artboard 1 copy 3_8
+  - first:
+      213: 2154021643695710828
+    second: Artboard 1 copy 3_9
+  - first:
+      213: 1787116602665896049
+    second: Artboard 1 copy 3_10
+  - first:
+      213: 6311206441375155557
+    second: Artboard 1 copy 3_11
+  - first:
+      213: 2225704748694932651
+    second: Artboard 1 copy 3_12
+  - first:
+      213: 1098368578983182328
+    second: Artboard 1 copy 3_13
+  - first:
+      213: -3131280990484341022
+    second: Artboard 1 copy 3_14
+  - first:
+      213: -4311865456055746301
+    second: Artboard 1 copy 3_15
+  - first:
+      213: 1022572142616033377
+    second: Artboard 1 copy 3_16
+  - first:
+      213: 465330777285117912
+    second: Artboard 1 copy 3_17
+  - first:
+      213: -4301621711457085469
+    second: Artboard 1 copy 3_18
+  - first:
+      213: 5919546997085139731
+    second: Artboard 1 copy 3_19
+  - first:
+      213: -1471240782443398366
+    second: Artboard 1 copy 3_20
+  - first:
+      213: 8107925714121174761
+    second: Artboard 1 copy 3_21
+  - first:
+      213: 3446812806779009328
+    second: Artboard 1 copy 3_22
+  - first:
+      213: 3185273998395610928
+    second: Artboard 1 copy 3_23
+  - first:
+      213: -1299350987598057172
+    second: Artboard 1 copy 3_24
+  - first:
+      213: 1544529642312851935
+    second: Artboard 1 copy 3_25
+  - first:
+      213: 5494383775178027792
+    second: Artboard 1 copy 3_26
+  - first:
+      213: -1699322966327288774
+    second: Artboard 1 copy 3_27
+  - first:
+      213: 9189412555415711466
+    second: Artboard 1 copy 3_28
+  - first:
+      213: -5829972744830056427
+    second: Artboard 1 copy 3_29
+  - first:
+      213: -5466514804932115393
+    second: Artboard 1 copy 3_30
+  - first:
+      213: -2929523804886072014
+    second: Artboard 1 copy 3_31
+  - first:
+      213: -2032362901503704010
+    second: Artboard 1 copy 3_32
+  - first:
+      213: -2810526131080944691
+    second: Artboard 1 copy 3_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_0
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 707
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243f208a1d9985390800000000000000
+      internalID: -7829338826437627070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_1
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 729
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ec3bdcec75b3de0800000000000000
+      internalID: -1352390717368709535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_2
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 706
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1612ad4838b4b3a0800000000000000
+      internalID: -6650488197759232482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_3
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 706
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77bcdd58c255ea40800000000000000
+      internalID: 5396810748995090301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_4
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 706
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753825c3373d68bb0800000000000000
+      internalID: -4934023849851059369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_5
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 707
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528fb987866e4ffc0800000000000000
+      internalID: -3461888877166594011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_6
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 706
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6edd355ab5be14220800000000000000
+      internalID: 2468512849624030694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_7
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 706
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fef53b48443be6b0800000000000000
+      internalID: -5266057854175543560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_8
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 706
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f752903e85595d090800000000000000
+      internalID: -8010332153209870977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_9
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 706
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c626cfeb54f94ed10800000000000000
+      internalID: 2154021643695710828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_10
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 706
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1788a12e41d1dc810800000000000000
+      internalID: 1787116602665896049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_11
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 706
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565c25af1d8e59750800000000000000
+      internalID: 6311206441375155557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_12
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 706
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac8cd83daa43ee10800000000000000
+      internalID: 2225704748694932651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_13
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 706
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff3eb637603e3f00800000000000000
+      internalID: 1098368578983182328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_14
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 706
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee5f3687847b84d0800000000000000
+      internalID: -3131280990484341022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_15
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 706
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3010584863d2924c0800000000000000
+      internalID: -4311865456055746301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_16
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 706
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168b6d522f7e03e00800000000000000
+      internalID: 1022572142616033377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_17
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 706
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7c22360ef257600800000000000000
+      internalID: 465330777285117912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_18
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 706
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e71e7a28d19d44c0800000000000000
+      internalID: -4301621711457085469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_19
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 706
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3137d7871a4762250800000000000000
+      internalID: 5919546997085139731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_20
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 707
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22bb467ad4a159be0800000000000000
+      internalID: -1471240782443398366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_21
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 706
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eea277ba73258070800000000000000
+      internalID: 8107925714121174761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_22
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 706
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039745b5cf985df20800000000000000
+      internalID: 3446812806779009328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_23
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 706
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03798a243dd543c20800000000000000
+      internalID: 3185273998395610928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_24
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 706
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c213aa93927c7fde0800000000000000
+      internalID: -1299350987598057172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_25
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 707
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd16e13c6854f6510800000000000000
+      internalID: 1544529642312851935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_26
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 706
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013f72bdee8ff3c40800000000000000
+      internalID: 5494383775178027792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_27
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 707
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c1669f3caca68e0800000000000000
+      internalID: -1699322966327288774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_28
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 706
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee6114180a578f70800000000000000
+      internalID: 9189412555415711466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_29
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 706
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51802365da6c71fa0800000000000000
+      internalID: -5829972744830056427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_30
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 707
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f348b9c6fb90324b0800000000000000
+      internalID: -5466514804932115393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_31
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 707
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23507b8ee9d3857d0800000000000000
+      internalID: -2929523804886072014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_32
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 707
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634803185b89bc3e0800000000000000
+      internalID: -2032362901503704010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1 copy 3_33
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 295
+        width: 953
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3a7f4ef510ff8d0800000000000000
+      internalID: -2810526131080944691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

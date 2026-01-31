@@ -1,0 +1,35 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class PlayerProperties : MonoBehaviour
+{
+    public float health = 100f;
+    public Image healthBar;
+
+    //Nguyên tố
+    public enum ElementType { Earth, Water, Fire }
+    public ElementType currentElement;
+
+
+    private void Start()
+    {
+       
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        healthBar.fillAmount = health / 100f;
+        if (health <= 0f)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        // Xử lý khi người chơi chết (ví dụ: phát hiệu ứng, tải lại cảnh, v.v.)
+        Debug.Log("Player has died.");
+    }
+}

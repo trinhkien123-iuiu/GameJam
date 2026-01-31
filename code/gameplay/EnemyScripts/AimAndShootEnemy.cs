@@ -30,6 +30,11 @@ public class AimAndShootEnemy : MonoBehaviour
 
     void Shoot()
     {
+        if (GetComponentInParent<LongRangeEnemy>().isShooting == false)
+        {
+            return;
+        }
+
         if (delayTime <= 0f)
         {
             Instantiate(bulletPrefab, spawnPos.position, transform.rotation);
@@ -39,6 +44,5 @@ public class AimAndShootEnemy : MonoBehaviour
         {
             delayTime -= Time.deltaTime;
         }
-        Debug.Log(delayTime);
     }
 }

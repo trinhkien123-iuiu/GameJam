@@ -8,17 +8,13 @@ public class AimAndShoot : MonoBehaviour
     GameObject bulletPrefab;
     private Camera mainCam;
     private Vector3 mousePos;
+    public PlayerAnimation playerAnimation;
 
-    public enum bulletType //Loai dan
-    {
-        fire,
-        water,
-        earth
-    }
 
     public GameObject[] bullets;
-
-    public bulletType currentBulletType;
+    
+    //Lấy element từ player
+    private PlayerProperties playerProperties;
 
 
     [Header("Khoảng cách tối thiểu để đạn không dính player")]
@@ -26,25 +22,31 @@ public class AimAndShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerAnimation.setMagic(0);
+        playerProperties = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerProperties>();
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetKey("1"))
         {
-            currentBulletType = bulletType.fire;
+            playerAnimation.setMagic(1);
+            playerProperties.currentElement = PlayerProperties.ElementType.Fire;
+
         }
         else
         if (Input.GetKey("2"))
         {
-            currentBulletType = bulletType.water;
+            playerAnimation.setMagic(2);
+            playerProperties.currentElement = PlayerProperties.ElementType.Water;
         }
         else if (Input.GetKey("3"))
         {
-            currentBulletType = bulletType.earth;
+            playerAnimation.setMagic(3);
+            playerProperties.currentElement = PlayerProperties.ElementType.Earth;
         }
         Aim();
         if (Input.GetMouseButtonDown(0))
@@ -63,7 +65,7 @@ public class AimAndShoot : MonoBehaviour
 
     public void Shoot()
     {
-        bulletPrefab = bullets[(int)currentBulletType];
+        bulletPrefab = bullets[(int)playerProperties.currentElement];
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         Vector3 shootDirection = (mousePos - transform.position).normalized;
         Instantiate(bulletPrefab, spawnPos.position, Quaternion.identity);

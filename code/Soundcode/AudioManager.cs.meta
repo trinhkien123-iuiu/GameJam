@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 6d2bffedb053e394fafb7eccbfc0b4db
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - musicSource: {instanceID: 0}
+  - sfxSource: {instanceID: 0}
+  - backgroundMusic: {fileID: 8300000, guid: 6d0271e9a5918db488030584c533245a, type: 3}
+  - fire: {fileID: 8300000, guid: ee6191b08e8a50441bac725ca9cd0dff, type: 3}
+  - water: {fileID: 8300000, guid: 56391f614ed82424a8bb5b1370ce2afb, type: 3}
+  - earth: {fileID: 8300000, guid: 007450010275336469b6026385c739ba, type: 3}
+  - air: {fileID: 8300000, guid: 3b3102b5be5ab8b4a86acd011958a4f5, type: 3}
+  - lava: {fileID: 8300000, guid: 83ff9a98e346e9f4fa6a6431a77ef85c, type: 3}
+  - wood: {fileID: 8300000, guid: d778e71f388d274489c3b053ed0b8ccc, type: 3}
+  - eFire: {fileID: 8300000, guid: cdbbcdbad8c373143ae81d8ea894f048, type: 3}
+  - eWater: {fileID: 8300000, guid: f13649a0da7bf124e81319d2e6feac5e, type: 3}
+  - eEarth: {fileID: 8300000, guid: c7c638bdd84ac644692e3eefab6bd16e, type: 3}
+  - explode: {fileID: 8300000, guid: 2292ffdfc29fe8e419345995f9ee4022, type: 3}
+  - move: {fileID: 8300000, guid: 314501f0231b7cb4481818d2997d0148, type: 3}
+  - buttonClick: {fileID: 8300000, guid: e4f77884e67754c4c835a9efb43d3346, type: 3}
+  - gameOver: {fileID: 8300000, guid: 7676ca03193ae3b4e82ba7aed586d55f, type: 3}
+  - win: {fileID: 8300000, guid: 10371fe861c37c146b3291868245fb3e, type: 3}
+  - maskCollect: {fileID: 8300000, guid: 984089645f3896d489c53f24f8ced4fc, type: 3}
+  - enemyDeath: {fileID: 8300000, guid: 6e5c7c5f2d935844a933da35e68d5d4c, type: 3}
+  - enemyDamage: {fileID: 8300000, guid: a6c899749cd20b2409eaf457b039f128, type: 3}
+  - playerDamage: {fileID: 8300000, guid: 03ec199789ffd8a47963f3e6263715b3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

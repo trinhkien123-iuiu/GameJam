@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 358403b2e406cc84abb530bd1be23085
+guid: 9fd57bde5a7ca9d4c95111c1b471001e
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -104,9 +104,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 108
-        y: 59
+        y: 60
         width: 1705
-        height: 957
+        height: 970
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Artboard 1 copy 5_0: 5815490154155668843
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
