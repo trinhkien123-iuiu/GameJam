@@ -3,9 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class mainMenu : MonoBehaviour
 {
+    public CurtainMaskTransition transitionPrefab;
     public void playGameBtn()
     {
-        SceneManager.LoadScene(0);
+        var t = Instantiate(transitionPrefab);
+        t.StartToScene("SampleScene");
 
     }
     public void instructBtn()
@@ -13,7 +15,7 @@ public class mainMenu : MonoBehaviour
 
     }
 
-    public void settingBtn()
+    public void plotBtn()
     {
 
     }
