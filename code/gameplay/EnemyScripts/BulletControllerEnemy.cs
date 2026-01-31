@@ -8,9 +8,11 @@ public class BulletControllerEnemy : MonoBehaviour
     //Không biết, đừng xóa;
     public float diff1 = 0f;
     private Transform player;
+    private BulletProperties bulletProperties; 
 
     void Start()
     {
+        bulletProperties = GetComponent<BulletProperties>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
         direction = (player.position - transform.position).normalized;
@@ -22,5 +24,14 @@ public class BulletControllerEnemy : MonoBehaviour
     void Update()
     {
         transform.position += direction * speed1 * Time.deltaTime;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            collision.gameObject.GetComponent<PlayerProperties>().TakeDamage(10f);
+        }
     }
 }

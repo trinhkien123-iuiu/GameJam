@@ -22,4 +22,12 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = moveDir * speed;
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //if (collision.gameObject.CompareTag("LowRangeEnemy"))
+        //{
+        //    gameObject.GetComponent<PlayerProperties>().TakeDamage(10f);
+        //    Debug.Log("Player hit by LowRangeEnemy");
+        //}
+    }
 }
