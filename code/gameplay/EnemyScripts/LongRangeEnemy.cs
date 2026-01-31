@@ -7,7 +7,6 @@ public class LongRangeEnemy : MonoBehaviour
 {
     public float health = 100f;
     private Transform player;
-    public GameObject collectTrigger;
     public enum elements
     {
         Fire,
@@ -16,6 +15,7 @@ public class LongRangeEnemy : MonoBehaviour
     }
     public elements currentElement;
     public bool isShooting = false;
+    public bool isDead = false;
 
     [Header("Tầm nhìn và tầm bắn")]
     [SerializeField] private float attackRange = 10f;
@@ -29,6 +29,8 @@ public class LongRangeEnemy : MonoBehaviour
 
     public float diff = 10f;
 
+    public GameObject hitBoxCollect;
+
     elements RandomEnemy()
     {
         return (elements)Random.Range(0, System.Enum.GetValues(typeof(elements)).Length);
@@ -36,7 +38,7 @@ public class LongRangeEnemy : MonoBehaviour
 
     void Start()
     {
-        currentElement = RandomEnemy();
+        hitBoxCollect = this.gameObject.GetComponentInChildren<CollectTrigger>().gameObject;
         if (currentElement == elements.Fire)
         {
             gameObject.GetComponent<SpriteRenderer>().color = Color.red;
@@ -55,27 +57,29 @@ public class LongRangeEnemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (player == null) return;
+        if (!isDead)
+        {
+            if (player == null) return;
 
-        float distance = Vector2.Distance(rb.position, player.position);
-        if (distance > lookDis)
-        {
-            // Player quá xa → đứng yên
-            rb.velocity = Vector2.zero;
+            float distance = Vector2.Distance(rb.position, player.position);
+            if (distance > lookDis)
+            {
+                // Player quá xa → đứng yên
+                rb.velocity = Vector2.zero;
+            }
+            else if (distance > attackRange)
+            {
+                // Trong tầm nhìn → chạy lại
+                Vector2 dir = (player.position - transform.position).normalized;
+                rb.MovePosition(rb.position + dir * moveSpeed * Time.fixedDeltaTime);
+            }
+            else
+            {
+                // Trong tầm bắn → đứng yên và bắn
+                rb.velocity = Vector2.zero;
+                isShooting = true;
+            }
         }
-        else if (distance > attackRange)
-        {
-            // Trong tầm nhìn → chạy lại
-            Vector2 dir = (player.position - transform.position).normalized;
-            rb.MovePosition(rb.position + dir * moveSpeed * Time.fixedDeltaTime);
-        }
-        else
-        {
-            // Trong tầm bắn → đứng yên và bắn
-            rb.velocity = Vector2.zero;
-            isShooting = true;
-        }
-        collectTrigger.transform.position = transform.position + new Vector3(0,diff,0);
     }
 
     public void TakeDamage(float damage)
@@ -89,7 +93,9 @@ public class LongRangeEnemy : MonoBehaviour
 
     public void Die()
     {
-        this.gameObject.GetComponent<CollectTrigger>().Fall();
-        Destroy(gameObject);
+        isDead = true;
+        this.GetComponent<Collider2D>().enabled = false;
+        this.GetComponent<SpriteRenderer>().enabled = false;
+        hitBoxCollect.GetComponent<Collider2D>().enabled = true;
     }
 }

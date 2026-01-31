@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1352048877555318138}
   - component: {fileID: 2379392685705714152}
   - component: {fileID: 6799685124274898755}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   diff: -35
+  magic: 0
 --- !u!114 &6799685124274898755
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,9 +9,11 @@ public class BulletControllerEnemy : MonoBehaviour
     public float diff1 = 0f;
     private Transform player;
     private BulletProperties bulletProperties; 
+    public Animator animator;
 
     void Start()
     {
+        if (this.name=="Bullet2") animator.SetInteger("isChecking",2 );
         bulletProperties = GetComponent<BulletProperties>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
 

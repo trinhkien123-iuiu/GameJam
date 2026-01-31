@@ -9,14 +9,18 @@ public class AimAndShootEnemy : MonoBehaviour
     public float delayTimeBegin = 1.0f;
 
     private Transform player;
+    private bool isDead;
 
     void Start()
     {
+        isDead = GetComponentInParent<LongRangeEnemy>().isDead;
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
     {
+        isDead = GetComponentInParent<LongRangeEnemy>().isDead;
+        if (isDead) return;
         Aim();
         Shoot();
     }

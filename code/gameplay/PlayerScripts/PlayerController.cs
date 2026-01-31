@@ -7,7 +7,9 @@ public class PlayerController : MonoBehaviour
     Vector2 moveDir;
 
     public Animator animator;
+    public Animator vfxAnim;
     public AudioManager audioManager;
+    public AimAndShoot aimAndShoot;
 
     void Awake()
     {
@@ -33,13 +35,34 @@ public class PlayerController : MonoBehaviour
         {
             audioManager.stopMoveAudio();
         }
+        if (Input.GetMouseButtonDown(0))
+        {
+            switch (aimAndShoot.magicType)
+            {
+                case 0:
+                    audioManager.fireAudio();
+                    break;
 
+                case 1:
+                    audioManager.earthAudio();
+                    break;
+
+                case 2:
+                    audioManager.waterAudio();
+                    break;
+
+                case 3:
+                    audioManager.fireAudio();
+                    break;
+            }
+        }
     }
 
     void FixedUpdate()
     {
         rb.velocity = moveDir * speed;
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //if (collision.gameObject.CompareTag("LowRangeEnemy"))

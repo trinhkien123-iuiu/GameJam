@@ -7,16 +7,12 @@ public class PlayerProperties : MonoBehaviour
 {
     public float health = 100f;
     public Image healthBar;
+    public int pass = 0;
 
     //Nguyên tố
-    public enum ElementType { Earth, Water, Fire }
+    public enum ElementType { Earth, Water, Fire, Default }
     public ElementType currentElement;
 
-
-    private void Start()
-    {
-       
-    }
 
     public void TakeDamage(float damage)
     {

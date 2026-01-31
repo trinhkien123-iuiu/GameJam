@@ -5,19 +5,13 @@ using DG.Tweening;
 
 public class CollectTrigger : MonoBehaviour
 {
-    public float fallAmount;
-    public Transform enemyPos;
-    public bool isFallen = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isFallen)
+       if (collision.CompareTag("Player"))
         {
-            Debug.Log("Trigger entered by: " + collision.gameObject.name);
+            Debug.Log("Collected");
+            collision.GetComponent<PlayerProperties>().pass += 1;
+            Destroy(this.gameObject);
         }
-    }
-
-    public void Fall()
-    {
-        transform.DOMoveY(transform.position.y - fallAmount, 0.5f).SetEase(Ease.InBack);
     }
 }

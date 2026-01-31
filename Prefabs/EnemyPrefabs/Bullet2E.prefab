@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5415849467035010058}
   - component: {fileID: 2803579647027324102}
   - component: {fileID: -8918468983803589685}
+  - component: {fileID: 327814642688000022}
   m_Layer: 7
   m_Name: Bullet2E
   m_TagString: Untagged
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 9580b3524da23514bbb8483104252a86, type: 3}
   m_Color: {r: 0.38909933, g: 0.6590287, b: 0.79622644, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,3 +100,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed1: 10
   diff1: 0
+--- !u!95 &327814642688000022
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449212639825349156}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e40232d36f546ae4db1dc2b9c9eb83f8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

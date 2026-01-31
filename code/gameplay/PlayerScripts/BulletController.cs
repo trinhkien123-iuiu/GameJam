@@ -9,10 +9,12 @@ public class BulletController : MonoBehaviour
     public float speed = 10f;
     //Không biết, đừng xóa;
     public float diff = -35f;
+    public int magic = 0;
+    private Animator animator;
 
     private BulletProperties bulletProperties;
 
-
+ 
     void Start()
     {
         bulletProperties = GetComponent<BulletProperties>();
