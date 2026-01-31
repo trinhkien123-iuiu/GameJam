@@ -46,6 +46,12 @@ public class AudioManager : MonoBehaviour
         sfxSource.Play();
     }
 
+    public void stopMoveAudio()
+    {
+        sfxSource.clip = move;
+        sfxSource.Stop();
+    }
+
     public void fireAudio()
     {
         sfxSource.clip = fire;
