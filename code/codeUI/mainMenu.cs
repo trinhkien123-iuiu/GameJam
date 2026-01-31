@@ -33,10 +33,10 @@ public class mainMenu : MonoBehaviour
         instructionPanel.SetActive(true);
     }
 
-    public void OpenPlot()
-    {
+    // public void OpenPlot()
+    // {
     
-    }
+    // }
 
     public void CloseCurrentPopup()
     {
