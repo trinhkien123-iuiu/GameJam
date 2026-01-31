@@ -1,43 +1,34 @@
 ﻿using UnityEngine;
 
-public class SwipeController : MonoBehaviour
+public class StoryPager : MonoBehaviour
 {
-    [SerializeField] int maxPage = 1;
-    int currentPage = 1;
+    [Header("Pages (con của Pages)")]
+    public GameObject[] pages;
 
-    [SerializeField] Vector3 pageStep;
-    [SerializeField] RectTransform levelPagesRect;
+    int currentPage = 0;
 
-    [SerializeField] float moveSpeed = 1600f;   // px/giây
-    [SerializeField] float snapDistance = 0.5f; // chốt vị trí
-
-    Vector3 targetPos;
-
-    void Awake()
+    void Start()
     {
-        targetPos = levelPagesRect.localPosition;
+        ShowPage(currentPage);
     }
 
-    void Update()
+    void ShowPage(int index)
     {
-        levelPagesRect.localPosition =
-            Vector3.MoveTowards(levelPagesRect.localPosition, targetPos, moveSpeed * Time.deltaTime);
-
-        if ((levelPagesRect.localPosition - targetPos).sqrMagnitude <= snapDistance * snapDistance)
-            levelPagesRect.localPosition = targetPos;
+        for (int i = 0; i < pages.Length; i++)
+            pages[i].SetActive(i == index);
     }
 
     public void Next()
     {
-        if (currentPage >= maxPage) return;
+        if (currentPage >= pages.Length - 1) return;
         currentPage++;
-        targetPos += pageStep;
+        ShowPage(currentPage);
     }
 
-    public void Previous()
+    public void Prev()
     {
-        if (currentPage <= 1) return;
+        if (currentPage <= 0) return;
         currentPage--;
-        targetPos -= pageStep;
+        ShowPage(currentPage);
     }
 }
