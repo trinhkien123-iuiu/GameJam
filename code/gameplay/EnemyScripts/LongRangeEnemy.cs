@@ -7,6 +7,7 @@ public class LongRangeEnemy : MonoBehaviour
 {
     public float health = 100f;
     private Transform player;
+    public GameObject collectTrigger;
     public enum elements
     {
         Fire,
@@ -25,7 +26,8 @@ public class LongRangeEnemy : MonoBehaviour
     public float moveSpeed = 5f;
     public float delayTime = 1.0f;
     public float delayTimeBegin = 1.0f;
-    // Start is called before the first frame update
+
+    public float diff = 10f;
 
     elements RandomEnemy()
     {
@@ -56,7 +58,6 @@ public class LongRangeEnemy : MonoBehaviour
         if (player == null) return;
 
         float distance = Vector2.Distance(rb.position, player.position);
-
         if (distance > lookDis)
         {
             // Player quá xa → đứng yên
@@ -74,6 +75,7 @@ public class LongRangeEnemy : MonoBehaviour
             rb.velocity = Vector2.zero;
             isShooting = true;
         }
+        collectTrigger.transform.position = transform.position + new Vector3(0,diff,0);
     }
 
     public void TakeDamage(float damage)
@@ -87,6 +89,7 @@ public class LongRangeEnemy : MonoBehaviour
 
     public void Die()
     {
+        this.gameObject.GetComponent<CollectTrigger>().Fall();
         Destroy(gameObject);
     }
 }

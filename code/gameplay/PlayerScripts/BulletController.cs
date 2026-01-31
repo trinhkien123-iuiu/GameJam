@@ -1,3 +1,4 @@
+
 ﻿using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,7 +16,6 @@ public class BulletController : MonoBehaviour
     void Start()
     {
         bulletProperties = GetComponent<BulletProperties>();
-
         mainCam = Camera.main;
 
         Vector3 mouse = Input.mousePosition;
@@ -69,3 +69,4 @@ public class BulletController : MonoBehaviour
         }
         }
     }
+

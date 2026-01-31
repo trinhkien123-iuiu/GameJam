@@ -9,13 +9,13 @@ public class PlayerProperties : MonoBehaviour
     public Image healthBar;
 
     //Nguyên tố
-    public enum ElementType { Fire, Water, Earth }
+    public enum ElementType { Earth, Water, Fire }
     public ElementType currentElement;
 
 
     private void Start()
     {
-        this.currentElement = ElementType.Fire;
+       
     }
 
     public void TakeDamage(float damage)

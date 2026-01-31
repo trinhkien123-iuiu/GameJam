@@ -25,7 +25,6 @@ public class BulletControllerEnemy : MonoBehaviour
     {
         transform.position += direction * speed1 * Time.deltaTime;
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -34,4 +33,5 @@ public class BulletControllerEnemy : MonoBehaviour
             collision.gameObject.GetComponent<PlayerProperties>().TakeDamage(10f);
         }
     }
+
 }

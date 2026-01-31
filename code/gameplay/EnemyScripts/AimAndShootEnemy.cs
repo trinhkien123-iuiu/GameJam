@@ -34,6 +34,7 @@ public class AimAndShootEnemy : MonoBehaviour
         {
             return;
         }
+
         if (delayTime <= 0f)
         {
             Instantiate(bulletPrefab, spawnPos.position, transform.rotation);

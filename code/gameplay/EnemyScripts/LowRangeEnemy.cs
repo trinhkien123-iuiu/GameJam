@@ -15,9 +15,6 @@ public class LowRangeEnemy : MonoBehaviour
     }
     public elements currentElement;
 
-    [Header("Tầm nhìn và tầm bắn")]
-    [SerializeField] private float attackRange = 10f;
-    [SerializeField] private float lookDis = 20f;
 
     private Rigidbody2D rb;
     public GameObject bulletPrefab;
